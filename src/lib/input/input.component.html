@@ -1,0 +1,15 @@
+<div>
+  <label *ngIf="label">
+    {{ label }}
+    <span *ngIf="required">*</span>
+  </label>
+  <input
+    type="{{ type }}"
+    placeholder="{{ placeholder }}"
+    attr.maxlength="{{ maxlength }}"
+    id="{{ id }}"
+    disabled="{{ disabled }}"
+    [(ngModel)]="value"
+    (blur)="onBlur()"
+  />
+</div>

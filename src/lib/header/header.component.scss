@@ -1,0 +1,25 @@
+.san-header {
+  width: 100%;
+  height: 64px;
+  background-color: #ca0000;
+  color: #ffffff;
+  font-size: 12px;
+
+  .logo {
+    float: left;
+    width: 75%;
+  }
+
+  .actions {
+    float: right;
+    width: 25%;
+
+    .actions-bar {
+      margin-top: 30px;
+
+      .buttons {
+        padding: 20px;
+      }
+    }
+  }
+}

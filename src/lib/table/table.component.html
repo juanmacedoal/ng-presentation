@@ -1,0 +1,30 @@
+<table cellspacing="0" cellpadding="0">
+  <thead>
+    <tr>
+      <th *ngFor="let header of columns" [style.width]="header.width ? header.width : 'auto'"
+        [ngClass]="header.className">
+        {{header.name}}
+        <i class="" *ngIf="header.order" (click)="orderAction(header)">ORDER</i>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let rowData of data" (click)="rowAction(rowData)">
+      <td *ngFor="let row of columns">
+        {{rowData[row.key]}}
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th [attr.colspan]="columns.length" *ngIf="loading">
+        loading ...
+      </th>
+    </tr>
+    <tr class="pagination">
+      <th [attr.colspan]="columns.length" (click)="pageAction()">
+        {{'SHOW_MORE' | lang}}
+      </th>
+    </tr>
+  </tfoot>
+</table>
