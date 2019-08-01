@@ -19,9 +19,9 @@ import { Component } from '@angular/core';
   `,
   styles: []
 })
-export class NgxPresnComponent {
+export class PresentationComponentsComponent {
   public label = 'Código Usuario';
-
+  
   table = {
     columns: [
       {

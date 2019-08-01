@@ -7,7 +7,7 @@ import { TabsModule } from './tabs/tabs.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
 import { TableModule } from './table/table.module';
 import { NgModule } from '@angular/core';
-import { NgxPresnComponent } from './ngx-presn.component';
+import { PresentationComponentsComponent } from './presentation-components.component';
 import { CommonModule } from '@angular/common';
 import { LangModule } from 'projects/ngx-core/src/public-api';
 import { FormsModule } from '@angular/forms';
@@ -30,9 +30,9 @@ const NgCoreModules = [LangModule];
 
 @NgModule({
   imports: [AngularModules, SanPresnModules, NgCoreModules],
-  declarations: [NgxPresnComponent],
+  declarations: [PresentationComponentsComponent],
   exports: [
-    NgxPresnComponent,
+    PresentationComponentsComponent,
     TabsModule,
     HeaderModule,
     ButtonModule,
@@ -44,4 +44,4 @@ const NgCoreModules = [LangModule];
     UserBarModule
   ]
 })
-export class NgxPresnModule {}
+export class PresentationComponentsModule {}

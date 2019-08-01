@@ -1,4 +1,4 @@
-### CoreComponents Code
+### PresentationComponents Code
 
 ## Table of contents
 * [General info](#general-info)
@@ -6,7 +6,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is used to allocate a Core components for Angular. The objective is to 
+This project is used to allocate a Presentation components for Angular. The objective is to 
 upload this code to a management package that can be share this library, like npm registry
 	
 ## Technologies
@@ -20,6 +20,6 @@ To run this project, install it locally using npm:
 ```
 $ cd ./
 $ npm run build core-components-jmmacedo
-$ cd /dist/core-components-jmmacedo/
+$ cd /dist/presentation-components-jmmacedo/
 $ npm publish
 ```
