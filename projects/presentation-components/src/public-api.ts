@@ -2,9 +2,9 @@
  * Public API Surface of ngx-presn
  */
 
-export * from './lib/ngx-presn.service';
-export * from './lib/ngx-presn.component';
-export * from './lib/ngx-presn.module';
+export * from './lib/presentation-components.service';
+export * from './lib/presentation-components.component';
+export * from './lib/presentation-components.module';
 export * from './lib/button/button.module';
 export * from './lib/footer/footer.module';
 export * from './lib/input/input.module';

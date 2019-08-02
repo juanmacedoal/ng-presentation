@@ -15,15 +15,6 @@ import {
 
 const noop = () => {};
 
-/**
- *
- *
- * @export
- * @class InputComponent
- * @implements {OnInit}
- * @implements {ControlValueAccessor}
- * @implements {Validator}
- */
 @Component({
   selector: 'san-presn-input',
   templateUrl: './input.component.html',
@@ -70,29 +61,17 @@ export class InputComponent implements OnInit, ControlValueAccessor, Validator {
     this.innerValue = this.content;
   }
 
-  /**
-   * Validate control
-   * @param control
-   */
+
   validate(control: AbstractControl) {
     return {};
   }
 
-  /**
-   * Get accessor
-   *
-   * @type {*}
-   * @memberof InputComponent
-   */
+
   get value(): any {
     return this.innerValue;
   }
 
-  /**
-   * Set accessor including call the onchange callback
-   *
-   * @memberof InputComponent
-   */
+
   set value(v: any) {
     if (v !== this.innerValue) {
       this.innerValue = v;
@@ -100,53 +79,30 @@ export class InputComponent implements OnInit, ControlValueAccessor, Validator {
     }
   }
 
-  /**
-   * Set touched on blur
-   *
-   * @memberof InputComponent
-   */
+
   onBlur() {
     this.onTouchedCallback();
   }
 
-  /**
-   * From ControlValueAccessor interface
-   *
-   * @param {*} value
-   * @memberof InputComponent
-   */
+
   writeValue(value: any) {
     if (value !== this.innerValue) {
       this.innerValue = value;
     }
   }
 
-  /**
-   * From ControlValueAccessor interface
-   *
-   * @param {*} fn
-   * @memberof InputComponent
-   */
+
   registerOnChange(fn: any) {
     this.onChangeCallback = fn;
     this.change.emit(this.value);
   }
 
-  /**
-   * From ControlValueAccessor interface
-   *
-   * @param {*} fn
-   * @memberof InputComponent
-   */
+
   registerOnTouched(fn: any) {
     this.onTouchedCallback = fn;
   }
-  /**
-   * Set disable state of component
-   *
-   * @param {boolean} isDisabled
-   * @memberof InputComponent
-   */
+
+  
   setDisabledState(isDisabled: boolean): void {
     this.disabled = isDisabled;
   }

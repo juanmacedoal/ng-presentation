@@ -1,12 +1,5 @@
 export class CustomValidator {
-  /**
-   * Validates passwords
-   *
-   * @static
-   * @param {*} group
-   * @returns {*}
-   * @memberof CustomValidator
-   */
+
   static matchPassword(group): any {
     const password = group.controls.password;
     const confirm = group.controls.confirm;
@@ -22,14 +15,7 @@ export class CustomValidator {
     };
   }
 
-  /**
-   * Validates numbers
-   *
-   * @static
-   * @param {*} number
-   * @returns {*}
-   * @memberof CustomValidator
-   */
+
   static numberValidator(number): any {
     if (number.pristine) {
       return null;
@@ -44,14 +30,7 @@ export class CustomValidator {
     };
   }
 
-  /**
-   * Validates phone numbers
-   *
-   * @static
-   * @param {*} number
-   * @returns {*}
-   * @memberof CustomValidator
-   */
+
   static phoneValidator(number): any {
     if (number.pristine) {
       return null;
@@ -66,14 +45,7 @@ export class CustomValidator {
     };
   }
 
-  /**
-   * Validates zip codes
-   *
-   * @static
-   * @param {*} zip
-   * @returns {*}
-   * @memberof CustomValidator
-   */
+
   static zipCodeValidator(zip): any {
     if (zip.pristine) {
       return null;
@@ -88,14 +60,7 @@ export class CustomValidator {
     };
   }
 
-  /**
-   * Validates alphanumeric
-   *
-   * @static
-   * @param {*} zip
-   * @returns {*}
-   * @memberof CustomValidator
-   */
+
   static alphanumericValidator(alphanumeric): any {
     if (alphanumeric.pristine) {
       return null;

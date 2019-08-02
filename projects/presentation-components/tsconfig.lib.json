@@ -7,9 +7,11 @@
     "moduleResolution": "node",
     "declaration": true,
     "sourceMap": true,
+    "no-redundant-jsdoc": true,
     "inlineSources": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "annotateForClosureCompiler": true,
     "importHelpers": true,
     "types": [],
     "lib": [
@@ -23,7 +25,9 @@
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
+    "no-redundant-jsdoc": true,
+
   },
   "exclude": [
     "src/test.ts",

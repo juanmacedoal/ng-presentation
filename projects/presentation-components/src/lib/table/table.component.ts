@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { LoggerService } from 'projects/ngx-core/src/public-api';
+import { LoggerService } from 'core-components-jmmacedo';
 import { TableEvent } from './table-event.enum';
 
 @Component({

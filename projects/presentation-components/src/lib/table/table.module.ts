@@ -1,4 +1,4 @@
-import { LangModule } from 'projects/ngx-core/src/public-api';
+import { LangModule } from 'core-components-jmmacedo';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableComponent } from './table.component';
